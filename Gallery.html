@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head><title> Yusuf Bachtiar </title>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	
+	body {
+		background-image: url(img/bg.jpg);
+	}
+	header {
+		background-image: img/bg.jpg;
+  		padding: 10px;
+ 		text-align: center;
+  		font-size: 35px;
+  		color: white;
+  		width: 98%;
+  		float: left;
+	}
+	img {
+   		width: 150px;
+   		height: 150px;
+   		border-radius: 50%;
+  		float: left;
+		}
+	li {
+  		float: left;
+  		border-right:1px solid #bbb;
+	}
+
+	li:last-child {
+  		border-right: none;
+	}
+
+	li a {
+  		display: block;
+  		color: white;
+  		text-align: center;
+  		padding: 14px 16px;
+  		text-decoration: none;
+	}
+
+	li a:hover:not(.active) {
+  		background-color: #111;
+	}
+
+	.active {
+  		background-color: #04AA6D;
+	}
+	
+	article {
+		width: 100%;
+		overflow: hidden;
+		min-width: 40%;
+		text-align: center;
+  		float: left;
+  		padding: 20px;
+  		background-color: #f1f1f1;
+  		height: auto; 
+  		overflow: hidden;
+  	}
+
+  	.grid-container {
+  		display: grid;
+  		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  		grid-gap: 1em;
+	}
+	
+	.location-listing {
+  		position: relative;
+  		overflow: hidden;
+	}
+ 	img {
+	  width: auto;
+	  height: auto;
+	}
+	.location-title {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  height: 100%;
+	  width: 100%;
+	  background: rgba(90,0,10,0.4);
+	}	
+	.location-image {
+	  line-height: 0;
+	}
+	.location-title {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  height: 100%;
+	  width: 100%;
+	  background: rgba(90,0,10,0.4);
+	   
+	  /* typographic styles */
+	  color: white;
+	  font-size: 1.5em;
+	  font-weight: bold;
+	  text-decoration: none;
+	   
+	  /* position the text centrally*/
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	/* hide the title by default */
+		opacity: 0;
+		transition: opacity .5s;
+	}
+	.location-listing:hover .location-title {
+ 	 opacity: 1;
+	}
+	.location-image img {
+	  filter: blur(0px);
+	  transition: filter 0.3s ease-in;
+	  transform: scale(1.1);
+	}
+	 
+	.location-listing:hover .location-image img {
+	  filter: blur(2px);
+	}
+
+  	.bawah ul li{
+  		list-style: none;
+		float: left;
+		width: auto;
+		height: 50px;
+		text-align: center;
+		color:  #e6e6e6;
+		padding: 0;
+  	}
+  	.bawah ul li a{
+  		color: white;
+  		text-decoration: none;
+  	}
+	.left, .right {
+  	float: left;
+  	width: 20%; /* The width is 20%, by default */
+	}
+
+	.main {
+  	float: left;
+  	width: 100%; /* The width is 60%, by default */
+	}
+
+	/* for touch screen devices */
+	@media (hover: none) { 
+ 	.location-title {
+    	opacity: 1;
+  	}
+  	.location-image img {
+    	filter: blur(2px);
+  		}
+	}
+</style>
+
+	</head>
+	<body>
+	<header>
+		
+	</header>
+
+	<section>
+		<div>
+		<nav>
+			<ul style="list-style-type: none; list-style-type: none;overflow: hidden;background-color: #444;">
+				<li><a href="index.html">Bio</a></li>
+				<li><a href="Experience.html">Experience</a></li>
+				<li><a href="Porject.html">Project/Course</a></li>
+				<li><a href="Education.html">Education</a></li>
+				<li><a href="Gallery.html">Gallery</a></li>
+				<li><a href="About.html">About</a></li>
+			</ul>
+		</nav>
+		</div>
+	</section>
+
+	<div class="child-page-listing">
+ 
+  	<h2 style="text-align:center; ">Under Creating</h2>
+ 
+  	<article class="location-listing">
+    	<a class="location-title" href="#">Nothing Here</a>
+    <div class="location-image">
+      	<a href="https://drive.google.com/drive/u/2/folders/1s5Wm9na1sdWDs9xz0gvY3XwKFIGnt9eA">
+     	</a>
+    	</div>
+ 	 </article>
+ 	 <article class="location-listing">
+    	<a class="location-title" href="#">Nothing Here</a>
+    <div class="location-image">
+      	<a href="https://drive.google.com/drive/u/2/folders/1s5Wm9na1sdWDs9xz0gvY3XwKFIGnt9eA">
+     	</a>
+    	</div>
+ 	 </article>
+ 
+ 
+ 
+	</div>
+
+
+	</body>
+	<footer>
+				<div class="bawah">
+					<ul style="list-style-type: none; list-style-type: none;overflow: hidden;background-color: #444;">
+						<li><a href="mailto:yusuf1bachtiar@gmail.com">E-Mail</a></li>
+						<li><a href="https://www.instagram.com/yusuf_bacht/">Instagram</a></a></li>
+						<li><a href="https://www.linkedin.com/in/yusuf-bachtiar-885395187/">Linkedin</a></li>
+						<li><a href="https://myjobstreet-id.jobstreet.co.id/">Jobstreet</a></a></li>
+					</ul>
+				</div>
+	</footer>
+		
+</html>
+	
+		
