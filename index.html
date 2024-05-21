@@ -8,6 +8,20 @@
 	
 	body {
 		background-image: url(img/bg.jpg);
+		width: 100%;
+		padding: 1%;
+		margin: 0;
+		min-width: 50%;
+	}
+	.kop {
+		width:auto;
+		min-width: 50%;
+		text-decoration: none;
+		border:none;
+		list-style-type: none;
+		text-align: left;
+		font-size: 25px;
+
 	}
 	header {
 		background-image: img/bg.jpg;
@@ -15,7 +29,8 @@
  		text-align: center;
   		font-size: 35px;
   		color: white;
-  		width: 98%;
+  		width: 100%;
+
   		float: left;
 	}
 	img {
@@ -49,21 +64,23 @@
   		background-color: #04AA6D;
 	}
 	
-	article {
-		width: 100%;
+	.isi {
+		width: auto;
 		overflow: hidden;
 		min-width: 50%;
 		text-align: center;
-  		float: left;
-  		padding: 20px;
+  		padding: 2%;
   		background-color: #f1f1f1;
   		height: auto; 
   		overflow: hidden;
+  		border-radius: 25px;
   	}
+
   	table {
   		font-family: arial, sans-serif;
   		border-collapse: collapse;
   		width: auto;
+  		min-width: 50%;
   		margin: auto;
 	}
 	td, th {
@@ -71,6 +88,36 @@
   		text-align: left;
   		padding: 4px;
 		}
+
+	div.gallery {
+	  padding: 2%;
+	  margin: 5px;
+	  border: 1px solid #ccc;
+	  float: left;
+	  width: 180px;
+	}
+
+	div.gallery:hover {
+	  border: 1px solid #777;
+	}
+
+	div.boxgall {
+		display: flex;
+		justify-content: center;
+		overflow: hidden;
+		width: auto;
+		min-width: 500px;
+	}
+
+	div.gallery img {
+	  width: 100%;
+	  height: 100px;
+	}
+
+	div.desc {
+	  padding: 15px;
+	  text-align: center;
+	}
   	.bawah ul li{
   		list-style: none;
 		float: left;
@@ -106,11 +153,26 @@
 	<body>
 	<header>
 		
-		<div><img src="img/pp.png"><p style="text-align: left;padding-top: 50px;">Yusuf Bachtiar <br> </p></div>
+		<div  class="kop">
+			<table class="kop">
+				<ul class="kop">
+					<li class="kop">
+						<img src="img/pp.png">
+					</li>
+					<li style="float: right;">
+						<p class="kop">
+							Yusuf Bachtiar<br><br>
+							Contact : <br>Kp. Jampang. Wanaherang, Gn.Putri<br>
+							E-mail  : yusuf1bachtiar@gmail.com<br>
+							No.Telp : 085887627477
+						</p>
+					</li>
+				</ul>
+
+			</table>
 		<div style="float: right;font-size: 18px;text-align: left;">
-			Contact : <br>Kp. Jampang. Wanaherang, Gn.Putri<br>
-			E-mail  : yusuf1bachtiar@gmail.com<br>
-			No.Telp : 085887627477
+			
+		</div>
 		</div>
 		
 	</header>
@@ -118,10 +180,10 @@
 	<section>
 		<div>
 		<nav>
-			<ul style="list-style-type: none; list-style-type: none;overflow: hidden;background-color: #444;">
+			<ul style="list-style-type: none; list-style-type: none;overflow: hidden;background-color: #444; width: auto;">
 				<li><a href="index.html">Bio</a></li>
 				<li><a href="Experience.html">Experience</a></li>
-				<li><a href="Porject.html">Certificate</a></li>
+				<li><a href="Project.html">Project / Course</a></li>
 				<li><a href="Education.html">Education</a></li>
 				<li><a href="Gallery.html">Gallery</a></li>
 				<li><a href="About.html">About</a></li>
@@ -130,39 +192,79 @@
 		</div>
 	</section>
 	
-		<article style="font-family: verdana;font-size: 14px;padding-top: 40px">
-		<h2>"Yusuf 2023"</h2>
-		<p> Lulusan SMK Teknik Komputer dan Jaringan yang berpengalaman dalam mengolah data, melakukan instalasi, perbaikan dan pengadaan dibidang IT.<br> Memiliki skill ms.office certified BNSP, Komputer dan jaringan lokal certified PT.BONET yang mendukung menjadi seorang IT Engineer.</p>
 
-		
+		<div class="isi">
+			<h2>"Yusuf 2024"</h2>
+			<p> Lulusan SMK Teknik Komputer dan Jaringan yang berpengalaman dalam mengolah data, melakukan instalasi, perbaikan dan pengadaan dibidang IT.<br> Memiliki skill ms.office certified BNSP, Komputer dan jaringan lokal certified PT.BONET serta pengalaman bekerja sebagai IT Support.</p>
+
 			
+				
 
-		<section>
-			<h2>Favorite</h2>
-			<table style="align-content: center;">
-				<tr>
-					<td>Music</td>
-					<td>Tulus, Rizky febian Albums</td>
-					<td><audio controls> <source src="media/TULUS.mp3" type="audio/ogg">
-						<source src="TULUS.mp3" type="audio/mp3">Your browser does not support the audio element.</audio> </td>
-				</tr>
-				<tr>
-					<td>Movie</td>
-					<td>Anime, Horor & Action </td>
-					<td>Sport is bcycling</td>
-				</tr>
-				<tr>
-				</tr>
-			</table>
-		
-		<br><hr><br>
-		<div class="Music" style="margin-left: 5px;">
-			<iframe width="420" height="215" src="https://www.youtube.com/embed/hBV5aQ5i7rk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			<iframe width="420" height="215" src="https://www.youtube.com/embed/jVRsmUcaqrU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<section>
+				<h2>Favorite</h2>
+				<table style="align-content: center;">
+					<tr>
+						<td>Music</td>
+						<td>Tulus, Rizky febian Albums</td>
+						<td><audio controls> <source src="media/TULUS.mp3" type="audio/ogg">
+							<source src="TULUS.mp3" type="audio/mp3">Your browser does not support the audio element.</audio> </td>
+					</tr>
+					<tr>
+						<td>Listening Music</td>
+						<td>Wacth Film</td>
+						<td>Joging, badminton, bcycle</td>
+					</tr>
+					<tr>
+					</tr>
+				</table>
+			
+			<br><hr><br>
+			<div class="boxgall">
+			<div class="gallery">
+			  <a target="_blank" href="img_5terre.jpg">
+			    <img src="img/troubleshoot.jpg" alt="Cinque Terre" width="600" height="400">
+			  </a>
+			  <div class="desc">Troubleshooting</div>
+			</div>
+
+			<div class="gallery">
+			  <a target="_blank" href="img_forest.jpg">
+			    <img src="img/spuser.png" alt="Forest" width="600" height="400">
+			  </a>
+			  <div class="desc">Support User</div>
+			</div>
+
+			<div class="gallery">
+			  <a target="_blank" href="img_lights.jpg">
+			    <img src="img/asset.jpg" alt="Northern Lights" width="600" height="400">
+			  </a>
+			  <div class="desc">Manage Asset IT</div>
+			</div>
+
+			<div class="gallery">
+			  <a target="_blank" href="img_mountains.jpg">
+			    <img src="img/comunicate.jpg" alt="Mountains" width="600" height="400">
+			  </a>
+			  <div class="desc">Communication</div>
+			</div>
+			<div class="gallery">
+			  <a target="_blank" href="img_mountains.jpg">
+			    <img src="img/itinfra.jpg" alt="Mountains" width="600" height="400">
+			  </a>
+			  <div class="desc">Infrastructure</div>
+			</div>
+
+			<div class="gallery">
+			  <a target="_blank" href="img_mountains.jpg">
+			    <img src="img/ngoding.jpg" alt="Mountains" width="600" height="400">
+			  </a>
+			  <div class="desc">Development</div>
+			</div>
+			</div>
+			</section>	
 		</div>
-		<hr>
-		</section>
-		</article>
+		
+		
 	</body>
 	<footer>
 				<div class="bawah">
@@ -172,6 +274,11 @@
 						<li><a href="https://www.linkedin.com/in/yusuf-bachtiar-885395187/">Linkedin</a></li>
 						<li><a href="https://myjobstreet-id.jobstreet.co.id/">Jobstreet</a></a></li>
 					</ul>
+				</div>
+				<div>
+					<p>
+						Since 2020 - 2024. Made By Yusuf Bachtiar
+					</p>
 				</div>
 	</footer>
 		
