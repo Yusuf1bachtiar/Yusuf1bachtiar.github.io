@@ -1,290 +1,82 @@
 <!DOCTYPE html>
-<html>
-	<head><title> Yusuf Bachtiar </title>
-	<title>Home</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-	
-	body {
-		background-image: url(img/bg.jpg);
-		width: 100%;
-		padding: 1%;
-		margin: 0;
-		min-width: 50%;
-	}
-	.kop {
-		width:auto;
-		min-width: 50%;
-		text-decoration: none;
-		border:none;
-		list-style-type: none;
-		text-align: left;
-		font-size: 25px;
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yusuf Bachtiar | Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-	}
-	header {
-		background-image: img/bg.jpg;
-  		padding: 10px;
- 		text-align: center;
-  		font-size: 35px;
-  		color: white;
-  		width: 100%;
+<header class="hero">
+    <div class="container">
+        <div class="profile-wrapper">
+            <img src="img/pp.png" alt="Yusuf Bachtiar" class="profile-img">
+            <div class="hero-text">
+                <h1>Yusuf Bachtiar</h1>
+                <p class="tagline">IT Support & IT Service Desk</p>
+                <div class="contact-info">
+                    <span>📍 Gn. Putri, Bogor</span>
+                    <span>📧 yusuf1bachtiar@gmail.com</span>
+                    <span>📞 085887627477</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 
-  		float: left;
-	}
-	img {
-   		width: 150px;
-   		height: 150px;
-   		border-radius: 50%;
-  		float: left;
-		}
-	li {
-  		float: left;
-  		border-right:1px solid #bbb;
-	}
+<nav>
+    <div class="container">
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Bio</a></li>
+            <li><a href="Experience.html">Experience</a></li>
+            <li><a href="Project.html">Project</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+        </ul>
+    </div>
+</nav>
 
-	li:last-child {
-  		border-right: none;
-	}
+<main class="container">
+    <section class="card bio">
+        <h2>About Me</h2>
+        <p>I am a Bachelor of Engineering Technology from <strong>Indraprasta PGRI University</strong>. Passionate about IT infrastructure, troubleshooting, and software development.</p>
+    </section>
 
-	li a {
-  		display: block;
-  		color: white;
-  		text-align: center;
-  		padding: 14px 16px;
-  		text-decoration: none;
-	}
+    <section class="card">
+        <h3>Skills & Expertise</h3>
+        <div class="grid-gallery">
+            <div class="gallery-item">
+                <img src="img/troubleshoot.jpg" alt="Troubleshooting">
+                <div class="desc">Troubleshooting</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/spuser.png" alt="Support User">
+                <div class="desc">Support User</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/asset.jpg" alt="Asset Management">
+                <div class="desc">Manage Asset IT</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/comunicate.jpg" alt="Communication">
+                <div class="desc">Communication</div>
+            </div>
+        </div>
+    </section>
+</main>
 
-	li a:hover:not(.active) {
-  		background-color: #111;
-	}
+<footer>
+    <div class="container">
+        <div class="social-links">
+            <a href="mailto:yusuf1bachtiar@gmail.com">Email</a>
+            <a href="https://instagram.com/yusuf_bacht">Instagram</a>
+            <a href="https://linkedin.com/in/yusuf-bachtiar-885395187/">LinkedIn</a>
+        </div>
+        <p>&copy; 2026 Yusuf Bachtiar. All rights reserved.</p>
+    </div>
+</footer>
 
-	.active {
-  		background-color: #04AA6D;
-	}
-	
-	.isi {
-		width: auto;
-		overflow: hidden;
-		min-width: 50%;
-		text-align: center;
-  		padding: 2%;
-  		background-color: #f1f1f1;
-  		height: auto; 
-  		overflow: hidden;
-  		border-radius: 25px;
-  	}
-
-  	table {
-  		font-family: arial, sans-serif;
-  		border-collapse: collapse;
-  		width: auto;
-  		min-width: 50%;
-  		margin: auto;
-	}
-	td, th {
- 		border: 1px solid #dddddd;
-  		text-align: left;
-  		padding: 4px;
-		}
-
-	div.gallery {
-	  padding: 2%;
-	  margin: 5px;
-	  border: 1px solid #ccc;
-	  float: left;
-	  width: 180px;
-	}
-
-	div.gallery:hover {
-	  border: 1px solid #777;
-	}
-
-	div.boxgall {
-		display: flex;
-		justify-content: center;
-		overflow: hidden;
-		width: auto;
-		min-width: 500px;
-	}
-
-	div.gallery img {
-	  width: 100%;
-	  height: 100px;
-	}
-
-	div.desc {
-	  padding: 15px;
-	  text-align: center;
-	}
-  	.bawah ul li{
-  		list-style: none;
-		float: left;
-		width: auto;
-		height: 50px;
-		text-align: center;
-		color:  #e6e6e6;
-		padding: 0;
-  	}
-  	.bawah ul li a{
-  		color: white;
-  		text-decoration: none;
-  	}
-	.left, .right {
-  	float: left;
-  	width: 20%; /* The width is 20%, by default */
-	}
-
-	.main {
-  	float: left;
-  	width: 100%; /* The width is 60%, by default */
-	}
-
-	/* Use a media query to add a breakpoint at 800px: */
-	@media screen and (max-width: 800px) {
-  	.left, .main, .right {
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-  	}
-	}
-</style>
-
-	</head>
-	<body>
-	<header>
-		
-		<div  class="kop">
-			<table class="kop">
-				<ul class="kop">
-					<li class="kop">
-						<img src="img/pp.png">
-					</li>
-					<li style="float: right;">
-						<p class="kop">
-							Yusuf Bachtiar<br><br>
-							Contact : <br>Kp. Jampang. Wanaherang, Gn.Putri<br>
-							E-mail  : yusuf1bachtiar@gmail.com<br>
-							No.Telp : 085887627477
-						</p>
-					</li>
-				</ul>
-
-			</table>
-		<div style="float: right;font-size: 18px;text-align: left;">
-			
-		</div>
-		</div>
-		
-	</header>
-
-	<section>
-		<div>
-		<nav>
-			<ul style="list-style-type: none; list-style-type: none;overflow: hidden;background-color: #444; width: auto;">
-				<li><a href="index.html">Bio</a></li>
-				<li><a href="Experience.html">Experience</a></li>
-				<li><a href="Project.html">Project / Course</a></li>
-				<li><a href="Education.html">Education</a></li>
-				<li><a href="Gallery.html">Gallery</a></li>
-				<li><a href="About.html">About</a></li>
-			</ul>
-		</nav>
-		</div>
-	</section>
-	
-
-		<div class="isi">
-			<h2>"Yusuf 2025"</h2>
-			<p> I am Bachelor from Engineering Technology at Indraprasta PGRI University</p>
-			<p> IT Support & IT Service Desk </p>
-
-			
-				
-
-			<section>
-				<h2>Favorite</h2>
-				<table style="align-content: center;">
-					<tr>
-						<td>Music</td>
-						<td>Tulus, Rizky febian Albums</td>
-						<td><audio controls> <source src="media/TULUS.mp3" type="audio/ogg">
-							<source src="TULUS.mp3" type="audio/mp3">Your browser does not support the audio element.</audio> </td>
-					</tr>
-					<tr>
-						<td>Listening Music</td>
-						<td>Wacth Film</td>
-						<td>Joging, badminton, bcycle</td>
-					</tr>
-					<tr>
-					</tr>
-				</table>
-			
-			<br><hr><br>
-			<div class="boxgall">
-			<div class="gallery">
-			  <a target="_blank" href="img_5terre.jpg">
-			    <img src="img/troubleshoot.jpg" alt="Cinque Terre" width="600" height="400">
-			  </a>
-			  <div class="desc">Troubleshooting</div>
-			</div>
-
-			<div class="gallery">
-			  <a target="_blank" href="img_forest.jpg">
-			    <img src="img/spuser.png" alt="Forest" width="600" height="400">
-			  </a>
-			  <div class="desc">Support User</div>
-			</div>
-
-			<div class="gallery">
-			  <a target="_blank" href="img_lights.jpg">
-			    <img src="img/asset.jpg" alt="Northern Lights" width="600" height="400">
-			  </a>
-			  <div class="desc">Manage Asset IT</div>
-			</div>
-
-			<div class="gallery">
-			  <a target="_blank" href="img_mountains.jpg">
-			    <img src="img/comunicate.jpg" alt="Mountains" width="600" height="400">
-			  </a>
-			  <div class="desc">Communication</div>
-			</div>
-			<div class="gallery">
-			  <a target="_blank" href="img_mountains.jpg">
-			    <img src="img/itinfra.jpg" alt="Mountains" width="600" height="400">
-			  </a>
-			  <div class="desc">Infrastructure</div>
-			</div>
-
-			<div class="gallery">
-			  <a target="_blank" href="img_mountains.jpg">
-			    <img src="img/ngoding.jpg" alt="Mountains" width="600" height="400">
-			  </a>
-			  <div class="desc">Development</div>
-			</div>
-			</div>
-			</section>	
-		</div>
-		
-		
-	</body>
-	<footer>
-				<div class="bawah">
-					<ul style="list-style-type: none; list-style-type: none;overflow: hidden;background-color: #444;">
-						<li><a href="mailto:yusuf1bachtiar@gmail.com">E-Mail</a></li>
-						<li><a href="https://www.instagram.com/yusuf_bacht/">Instagram</a></a></li>
-						<li><a href="https://www.linkedin.com/in/yusuf-bachtiar-885395187/">Linkedin</a></li>
-						<li><a href="https://myjobstreet-id.jobstreet.co.id/">Jobstreet</a></a></li>
-					</ul>
-				</div>
-				<div>
-					<p>
-						Since 2020 - 2025. Made By Yusuf Bachtiar
-					</p>
-				</div>
-	</footer>
-		
+<script src="script.js"></script>
+</body>
 </html>
-	
-		
-
-
