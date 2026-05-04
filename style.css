@@ -182,3 +182,53 @@ table {
     border-spacing: 0; 
     margin: 10px 0;
 }
+
+/* Styling untuk Task List */
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.task-list li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #04AA6D;
+    font-weight: bold;
+}
+
+/* Styling untuk Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px; /* Jarak antar kolom skill */
+    margin-top: 15px;
+}
+
+.skill-category {
+    background: #fdfdfd;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #04AA6D;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.02);
+}
+
+.skill-category h4 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+.skill-category p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+}
