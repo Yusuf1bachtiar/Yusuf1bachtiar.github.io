@@ -168,3 +168,17 @@ footer {
         padding: 10px;
     }
 }
+/* Update pada bagian Tabel */
+th, td {
+    padding: 15px 20px; /* Jarak atas-bawah 15px, kiri-kanan 20px */
+    text-align: left;
+    border-bottom: 1px solid #eee; /* Garis tipis antar baris agar lebih elegan */
+}
+
+/* Memberikan jarak antar kolom tabel agar tidak rapat */
+table {
+    width: 100%;
+    border-collapse: separate; /* Mengubah dari collapse ke separate jika ingin jarak khusus */
+    border-spacing: 0; 
+    margin: 10px 0;
+}
