@@ -1,217 +1,110 @@
 <!DOCTYPE html>
-<html>
-	<head><title> Yusuf Bachtiar </title>
-	<title>Home</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-	
-	body {
-		background-image: url(img/bg.jpg);
-	}
-	header {
-		background-image: img/bg.jpg;
-  		padding: 10px;
- 		text-align: center;
-  		font-size: 35px;
-  		color: white;
-  		width: 98%;
-  		float: left;
-	}
-	img {
-   		width: 150px;
-   		height: 150px;
-   		border-radius: 50%;
-  		float: left;
-		}
-	li {
-  		float: left;
-  		border-right:1px solid #bbb;
-	}
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery | Yusuf Bachtiar</title>
+    <!-- Memanggil CSS utama -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-	li:last-child {
-  		border-right: none;
-	}
+<header class="hero">
+    <div class="container">
+        <div class="hero-text" style="text-align: center;">
+            <h1>Activity Gallery</h1>
+            <p class="tagline">Documentation of IT Operations & Maintenance</p>
+        </div>
+    </div>
+</header>
 
-	li a {
-  		display: block;
-  		color: white;
-  		text-align: center;
-  		padding: 14px 16px;
-  		text-decoration: none;
-	}
+<nav>
+    <div class="container">
+        <ul class="nav-links">
+            <li><a href="index.html">Bio</a></li>
+            <li><a href="Experience.html">Experience</a></li>
+            <li><a href="Project.html">Project</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Gallery.html" class="active">Gallery</a></li>
+            <li><a href="About.html">About</a></li>
+        </ul>
+    </div>
+</nav>
 
-	li a:hover:not(.active) {
-  		background-color: #111;
-	}
+<main class="container">
+    <section class="card">
+        <h2>Technical Moments</h2>
+        <p style="margin-bottom: 25px;">Dokumentasi kegiatan teknis harian sebagai IT Support Engineer:</p>
+        
+        <div class="grid-gallery">
+            <!-- Moment 1 -->
+            <div class="gallery-item">
+                <img src="img/install-win.jpg" alt="Installation Windows">
+                <div class="desc">
+                    <strong>OS Installation</strong>
+                    <p style="font-size: 0.8rem; color: #777;">Proses deploy Windows 11 untuk workstation user baru.</p>
+                </div>
+            </div>
 
-	.active {
-  		background-color: #04AA6D;
-	}
-	
-	article {
-		width: 100%;
-		overflow: hidden;
-		min-width: 40%;
-		text-align: center;
-  		float: left;
-  		padding: 20px;
-  		background-color: #f1f1f1;
-  		height: auto; 
-  		overflow: hidden;
-  	}
+            <!-- Moment 2 -->
+            <div class="gallery-item">
+                <img src="img/server-maint.jpg" alt="Maintenance Server">
+                <div class="desc">
+                    <strong>Server Maintenance</strong>
+                    <p style="font-size: 0.8rem; color: #777;">Pengecekan rutin kondisi server dan backup data berkala.</p>
+                </div>
+            </div>
 
-  	.grid-container {
-  		display: grid;
-  		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  		grid-gap: 1em;
-	}
-	
-	.location-listing {
-  		position: relative;
-  		overflow: hidden;
-	}
- 	img {
-	  width: auto;
-	  height: auto;
-	}
-	.location-title {
-	  position: absolute;
-	  top: 0;
-	  left: 0;
-	  height: 100%;
-	  width: 100%;
-	  background: rgba(90,0,10,0.4);
-	}	
-	.location-image {
-	  line-height: 0;
-	}
-	.location-title {
-	  position: absolute;
-	  top: 0;
-	  left: 0;
-	  height: 100%;
-	  width: 100%;
-	  background: rgba(90,0,10,0.4);
-	   
-	  /* typographic styles */
-	  color: white;
-	  font-size: 1.5em;
-	  font-weight: bold;
-	  text-decoration: none;
-	   
-	  /* position the text centrally*/
-	  display: flex;
-	  align-items: center;
-	  justify-content: center;
-	/* hide the title by default */
-		opacity: 0;
-		transition: opacity .5s;
-	}
-	.location-listing:hover .location-title {
- 	 opacity: 1;
-	}
-	.location-image img {
-	  filter: blur(0px);
-	  transition: filter 0.3s ease-in;
-	  transform: scale(1.1);
-	}
-	 
-	.location-listing:hover .location-image img {
-	  filter: blur(2px);
-	}
+            <!-- Moment 3 -->
+            <div class="gallery-item">
+                <img src="img/network-troubleshoot.jpg" alt="Networking">
+                <div class="desc">
+                    <strong>Network Troubleshooting</strong>
+                    <p style="font-size: 0.8rem; color: #777;">Audit jalur kabel LAN dan konfigurasi Access Point.</p>
+                </div>
+            </div>
 
-  	.bawah ul li{
-  		list-style: none;
-		float: left;
-		width: auto;
-		height: 50px;
-		text-align: center;
-		color:  #e6e6e6;
-		padding: 0;
-  	}
-  	.bawah ul li a{
-  		color: white;
-  		text-decoration: none;
-  	}
-	.left, .right {
-  	float: left;
-  	width: 20%; /* The width is 20%, by default */
-	}
+            <!-- Moment 4 -->
+            <div class="gallery-item">
+                <img src="img/printer-repair.jpg" alt="Printer Maintenance">
+                <div class="desc">
+                    <strong>Peripherals Repair</strong>
+                    <p style="font-size: 0.8rem; color: #777;">Troubleshooting printer thermal dan printer laser jet.</p>
+                </div>
+            </div>
 
-	.main {
-  	float: left;
-  	width: 100%; /* The width is 60%, by default */
-	}
+            <!-- Moment 5 -->
+            <div class="gallery-item">
+                <img src="img/hardware-upgrade.jpg" alt="Hardware Upgrade">
+                <div class="desc">
+                    <strong>Hardware Upgrade</strong>
+                    <p style="font-size: 0.8rem; color: #777;">Upgrade RAM dan SSD pada laptop operasional perusahaan.</p>
+                </div>
+            </div>
 
-	/* for touch screen devices */
-	@media (hover: none) { 
- 	.location-title {
-    	opacity: 1;
-  	}
-  	.location-image img {
-    	filter: blur(2px);
-  		}
-	}
-</style>
+            <!-- Moment 6 -->
+            <div class="gallery-item">
+                <img src="img/asset-tagging.jpg" alt="Asset Tagging">
+                <div class="desc">
+                    <strong>IT Asset Inventory</strong>
+                    <p style="font-size: 0.8rem; color: #777;">Pemberian label asset (tagging) untuk manajemen inventaris.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
-	</head>
-	<body>
-	<header>
-		
-	</header>
+<footer>
+    <div class="container">
+        <div class="social-links">
+            <a href="mailto:yusuf1bachtiar@gmail.com">Email</a>
+            <a href="https://instagram.com/yusuf_bacht">Instagram</a>
+            <a href="https://linkedin.com/in/yusuf-bachtiar-885395187/">LinkedIn</a>
+        </div>
+        <p>&copy; 2026 Yusuf Bachtiar. All rights reserved.</p>
+    </div>
+</footer>
 
-	<section>
-		<div>
-		<nav>
-			<ul style="list-style-type: none; list-style-type: none;overflow: hidden;background-color: #444;">
-				<li><a href="index.html">Bio</a></li>
-				<li><a href="Experience.html">Experience</a></li>
-				<li><a href="Project.html">Project/Course</a></li>
-				<li><a href="Education.html">Education</a></li>
-				<li><a href="Gallery.html">Gallery</a></li>
-				<li><a href="About.html">About</a></li>
-			</ul>
-		</nav>
-		</div>
-	</section>
-
-	<div class="child-page-listing">
- 
-  	<h2 style="text-align:center; ">Under Creating</h2>
- 
-  	<article class="location-listing">
-    	<a class="location-title" href="#">Nothing Here</a>
-    <div class="location-image">
-      	<a href="https://drive.google.com/drive/u/2/folders/1s5Wm9na1sdWDs9xz0gvY3XwKFIGnt9eA">
-     	</a>
-    	</div>
- 	 </article>
- 	 <article class="location-listing">
-    	<a class="location-title" href="#">Nothing Here</a>
-    <div class="location-image">
-      	<a href="https://drive.google.com/drive/u/2/folders/1s5Wm9na1sdWDs9xz0gvY3XwKFIGnt9eA">
-     	</a>
-    	</div>
- 	 </article>
- 
- 
- 
-	</div>
-
-
-	</body>
-	<footer>
-				<div class="bawah">
-					<ul style="list-style-type: none; list-style-type: none;overflow: hidden;background-color: #444;">
-						<li><a href="mailto:yusuf1bachtiar@gmail.com">E-Mail</a></li>
-						<li><a href="https://www.instagram.com/yusuf_bacht/">Instagram</a></a></li>
-						<li><a href="https://www.linkedin.com/in/yusuf-bachtiar-885395187/">Linkedin</a></li>
-						<li><a href="https://myjobstreet-id.jobstreet.co.id/">Jobstreet</a></a></li>
-					</ul>
-				</div>
-	</footer>
-		
+<script src="script.js"></script>
+</body>
 </html>
-	
-		
